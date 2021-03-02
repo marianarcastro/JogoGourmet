@@ -94,8 +94,10 @@ public class PratoController
         {
             int sizeListaNovosPratos = listaNovosPratos.size();
             int countPratos = 0;
-            while(sizeListaNovosPratos > 0) 
-            {
+            
+            for(int i = 0; i < sizeListaNovosPratos; i++) {
+            
+            //while(sizeListaNovosPratos > 0) {
                 int dialogResult2 = JOptionPane.showConfirmDialog(null, "O prato que você pensou é " + this.listaNovosPratos.get(countPratos).getTipo() + "?", "Confirme", 0, 3);
                 countPratos++;
                 if(dialogResult2 == 0)
