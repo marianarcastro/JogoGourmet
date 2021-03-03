@@ -7,6 +7,7 @@ public class Prato
     private int id;
     private String nome;
     private String tipo;
+    private String categoria;
 
     public Prato()
     {
@@ -17,6 +18,14 @@ public class Prato
         this.id = id;
         this.nome = nome;
         this.tipo = tipo;
+    }
+    
+    public Prato(int id, String nome, String tipo, String categoria)
+    {
+        this.id = id;
+        this.nome = nome;
+        this.tipo = tipo;
+        this.categoria = categoria;
     }
 
     public int getId()
@@ -48,4 +57,13 @@ public class Prato
     {
         this.tipo = tipo;
     }
+
+	public String getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
+    
 }
